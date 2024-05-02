@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="<KEY>" crossorigin="anonymous">
+
+
+        <link rel="icon" href="icons/fav-icon.png" type="image/png" sizes="32x32.png"/>
+
+
+
+      <title>Kingston Spotts | Software Engineer</title>
+    </head>
+
+<body>
+  <section>
+    <section class="ball-animation">
+    <div id="app">
+        <div class="metaballs">
+            <svg class="metasvg">
+            <defs>
+                <filter id="gooify" width="400%" x="-10%" height="400%" y="-150%">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
+                <feColorMatrix
+                    in="blur"
+                    mode="matrix"
+                    values="1 0 0 0 0
+                        0 1 0 0 0
+                        0 0 1 0 0
+                        0 0 0 25 -10"
+                />
+                </filter>
+
+
+
+                <linearGradient id="lavaGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#ff1900" />
+                <stop offset="100%" stop-color="#eec80c" />
+                </linearGradient>
+            </defs>
+
+            <g filter="url(#gooify)">
+
+            <circle
+                class="blobb glow"
+                fill="url(#lavaGradient)"
+                ref="circle1"
+                :cx="circle1.x"
+                :cy="circle1.y"
+                r="170"
+                />
+
+
+            <circle
+                class="blobb glow"
+                fill="url(#lavaGradient)"
+                ref="circle2"
+                :cx="circle2.x"
+                :cy="circle2.y"
+                r="90"
+                />
+
+
+            <circle
+                class="blobb glow"
+                fill="url(#lavaGradient)"
+                ref="circle3"
+                :cx="circle3.x"
+                :cy="circle3.y"
+                r="120"
+                />
+            <circle
+                class="blobb glow"
+                fill="url(#lavaGradient)"
+                ref="circle4"
+                :cx="circle4.x"
+                :cy="circle4.y"
+                r="140"
+
+                />
+                <circle
+                class="blobb glow"
+                fill="url(#lavaGradient)"
+                ref="circle5"
+                :cx="circle5.x"
+                :cy="circle5.y"
+                r="70"
+
+                />
+            </g>
+
+            </svg>
+        </div>
+        </div>
+        </section>
+</section>
+
+<!---Navbar-->
+<nav>
+  <h1 class="names"> Kingston Spotts</h1>
+  <ul class="navigation">
+      <li><a href="index.html" class="nav-link">About</a></li>
+      <li><a href="skills.html" class="nav-link">Skills</a></li>
+      <li><a href="projects.html" class="nav-link">Projects</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+  </ul>
+  <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+  </button>
+  <button class="resume"><a href="icons/resume tech.pdf">Resume</a></button>
+
+</nav>
+
+
+<form
+action="https://formspree.io/f/xaygpdgn"
+method="POST">
+  <section class="contact" id="contact">
+  <h2 class="title text-center mb-4">Get in Touch With Me</h2>
+  <div class="contact-form-container">
+
+
+      <!-- Name -->
+      <div class="form-group position-relative">
+        <label for="formName" class="d-block">
+          <i class="hire-me" data-feather="user"></i>
+        </label>
+        <input type="text" id="formName" class="form-control form-control-lg thick" placeholder="Samuel L. Ipsum">
+      </div>
+
+      <!-- E-mail -->
+      <div class="form-group position-relative">
+        <label for="formEmail" class="d-block">
+          <i class="hire-me" data-feather="mail"></i>
+        </label>
+        <input type="email" id="formEmail" class="form-control form-control-lg thick" placeholder="E-mail">
+      </div>
+
+      <!-- Message -->
+      <div class="form-group message">
+        <textarea id="formMessage" class="form-control form-control-lg" rows="7" placeholder="Tell Me About Yourself"></textarea>
+      </div>
+
+      <!-- Submit btn -->
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary" tabIndex="-1">Send message</button>
+      </div>
+  </form>
+
+</div>
+<footer>
+
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.37/vue.global.prod.min.js"></script>
+<script
+type="module"
+src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script src="index.js"></script>
+</body>
+</html>

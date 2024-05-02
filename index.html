@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel="icon" href="icons/fav-icon.png" type="image/png" sizes="32x32.png"/>
+  <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="<KEY>" crossorigin="anonymous"/>
+
+
+
+
+
+ <title>Kingston Spotts | Software Engineer</title>
+    </head>
+
+    <section>
+        <section class="ball-animation"></section>
+        <div id="app">
+            <div class="metaballs">
+                <svg class="metasvg">
+                <defs>
+                    <filter id="gooify" width="400%" x="-10%" height="400%" y="-150%">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
+                    <feColorMatrix
+                        in="blur"
+                        mode="matrix"
+                        values="1 0 0 0 0
+                            0 1 0 0 0
+                            0 0 1 0 0
+                            0 0 0 25 -10"
+                    />
+                    </filter>
+
+
+
+                    <linearGradient id="lavaGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#ff1900" />
+                    <stop offset="100%" stop-color="#eec80c" />
+                    </linearGradient>
+                </defs>
+
+                <g filter="url(#gooify)">
+
+                <circle
+                    class="blobb glow"
+                    fill="url(#lavaGradient)"
+                    ref="circle1"
+                    :cx="circle1.x"
+                    :cy="circle1.y"
+                    r="170"
+                    />
+
+
+                <circle
+                    class="blobb glow"
+                    fill="url(#lavaGradient)"
+                    ref="circle2"
+                    :cx="circle2.x"
+                    :cy="circle2.y"
+                    r="90"
+                    />
+
+
+                <circle
+                    class="blobb glow"
+                    fill="url(#lavaGradient)"
+                    ref="circle3"
+                    :cx="circle3.x"
+                    :cy="circle3.y"
+                    r="120"
+                    />
+                <circle
+                    class="blobb glow"
+                    fill="url(#lavaGradient)"
+                    ref="circle4"
+                    :cx="circle4.x"
+                    :cy="circle4.y"
+                    r="140"
+
+                    />
+                    <circle
+                    class="blobb glow"
+                    fill="url(#lavaGradient)"
+                    ref="circle5"
+                    :cx="circle5.x"
+                    :cy="circle5.y"
+                    r="70"
+
+                    />
+                </g>
+
+                </svg>
+            </div>
+            </div>
+</section>
+
+    <nav>
+        <h1 class="names"> Kingston Spotts</h1>
+        <ul class="navigation">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="skills.html" class="nav-link">Skills</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+            <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+        <button class="resume"><a href="icons/resume tech.pdf">Resume</a></button>
+
+    </nav>
+
+    <div class="floating">
+<section class="astronaut">
+    <img src="/icons/astronaut.png" alt="astronaut-pic" >
+</section>
+</div>
+
+    <!--Hero Section -->
+    <section class="hero" id="about">
+<div class="bio animate__animated animate__shakeX">
+<h2  class="bio-title">About Me</h2>
+<p class="bio-text">I'm a self-taught Software developer that is looking for an oppurtunity to learn and grow. </p>
+</div>
+</section>
+
+<!--more about-->
+<section class="more-about">
+<h2>More About Me</h2>
+<p>
+I am currently a Front-End developer workign on becoming a Full-Stack Developer. I am transitioning careers and plan on working on learning game development and using the knowledge that I have in the medical field to make video games more accessible. I have completed online bootcamps to help me advance my career as a software developer.
+I am profiecent in HTML, CSS, Java, Javascript and Python for web development. I frequently complete personal projects to help develop and expand my skill and challenge my knowledge. Ask me about my projects!
+</p>
+
+</section>
+
+    </section>
+
+
+<!--Social-->
+<div class="socials">
+<a href="https://www.linkedin.com/in/kingston-spotts-505454181/" target="_blank">
+  <img src="icons/linkedin-logo.png"
+  alt="Linkedin"
+  loading="lazy"
+  class="socicon"/>
+</a>
+<a href="https://github.com/PinkKingSaturn" target="_blank">
+  <img alt="Github"
+  src="icons/github-mark.png" loading="lazy"
+  class="socicon"/>
+</a>
+</div>
+
+
+<i class="scroll-up" id="scroll-up"
+  ></i>
+
+
+
+<footer>
+
+</footer>
+
+
+    <!--website scripts-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.37/vue.global.prod.min.js"></script>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script src="index.js"></script>
+</body>
+</html>
