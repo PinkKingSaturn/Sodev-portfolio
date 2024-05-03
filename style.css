@@ -67,6 +67,19 @@ margin: auto;
 .names {
     font-family: "Oleo Script", system-ui
 }
+.names, .ideal-job{
+  display: inline-block;
+  justify-content: space-evenly;
+
+}
+.ideal-job{
+  font-family: "Space Grotesk", sans-serif;
+  color: #fff;
+  opacity: 25%;
+  font-size: 24px;
+  padding: 1rem;
+  font-style: italic;
+}
 
 nav {
     position: sticky;
@@ -129,6 +142,10 @@ font-family: "Space Grotesk", sans-serif;
   transition: all 0.3s ease;
   font-family: "Space Grotesk", sans-serif;
 }
+.resume a:hover {
+  color: #ff4800 !important;
+  border-bottom: 2px solid #ff4800 !important;
+}
 
 .hero {
   display: flex;
@@ -139,6 +156,7 @@ font-family: "Space Grotesk", sans-serif;
   max-width: 70rem;
   margin: auto;
   font-family: "Space Grotesk", sans-serif;
+
 
  }
 .astronaut {
@@ -172,6 +190,8 @@ font-family: "Space Grotesk", sans-serif;
   padding: 0.625rem;
   border-radius: 6px;
   box-shadow: 0px 2px 15px 2px #000;
+  background-color: #fff;
+  opacity: 95%;
 }
 .bio h1 {
   margin-bottom: 1rem;
