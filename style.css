@@ -67,12 +67,12 @@ margin: auto;
 .names {
     font-family: "Oleo Script", system-ui
 }
-.names, .ideal-job{
+.names, .ideal-jobs {
   display: inline-block;
   justify-content: space-evenly;
 
 }
-.ideal-job{
+.ideal-jobs {
   font-family: "Space Grotesk", sans-serif;
   color: #fff;
   opacity: 25%;
@@ -201,7 +201,7 @@ font-family: "Space Grotesk", sans-serif;
   padding: 0.3rem 0;
 }
 
-.hero .more-about {
+.hero, .more-about {
   justify-content: center;
   flex-direction: column;
 }
@@ -322,7 +322,7 @@ padding: 20px;
 		}
   }
 
-	.message .form-control {
+	.message, .form-control {
 			padding: .5rem 1.8rem;
 	}
 
